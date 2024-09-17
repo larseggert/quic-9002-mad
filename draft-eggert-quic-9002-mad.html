@@ -7,7 +7,7 @@
 <title>Maximum Acknowledgment Delay and QUIC Loss Recovery</title>
 <meta content="Lars Eggert" name="author">
 <meta content="
-       This document updates   by specifying how the  max_ack_delay  is
+       This document updates RFC9002 by specifying how the  max_ack_delay  is
 incorporated into the computation of the  loss_delay  used for time-based loss
 recovery. 
     " name="description">
@@ -1067,7 +1067,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <h1 id="title">Maximum Acknowledgment Delay and QUIC Loss Recovery</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">This document updates <span>[<a href="#RFC9002" class="cite xref">RFC9002</a>]</span> by specifying how the <code>max_ack_delay</code> is
+<p id="section-abstract-1">This document updates RFC9002 by specifying how the <code>max_ack_delay</code> is
 incorporated into the computation of the <code>loss_delay</code> used for time-based loss
 recovery.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 </section>
@@ -1142,7 +1142,7 @@ recovery.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
             <p id="section-toc.1-1.2.1" class="keepWithNext"><a href="#section-2" class="auto internal xref">2</a>.  <a href="#name-conventions-and-definitions" class="internal xref">Conventions and Definitions</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3">
-            <p id="section-toc.1-1.3.1"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-updates-to" class="internal xref">Updates to RFC9002</a></p>
+            <p id="section-toc.1-1.3.1"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-updates-to-rfc9002" class="internal xref">Updates to RFC9002</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1">
                 <p id="section-toc.1-1.3.2.1.1" class="keepWithNext"><a href="#section-3.1" class="auto internal xref">3.1</a>.  <a href="#name-detecting-lost-packets" class="internal xref">Detecting Lost Packets</a></p>
@@ -1195,8 +1195,8 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
 </div>
 <div id="updates-to-rfc9002">
 <section id="section-3">
-      <h2 id="name-updates-to">
-<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-updates-to" class="section-name selfRef">Updates to <span class="cite xref">[RFC9002]</span></a>
+      <h2 id="name-updates-to-rfc9002">
+<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-updates-to-rfc9002" class="section-name selfRef">Updates to RFC9002</a>
       </h2>
 <div id="detecting-lost-packets">
 <section id="section-3.1">
@@ -1219,7 +1219,7 @@ early retransmissions.<a href="#section-3.1-4" class="pilcrow">¶</a></p>
 into account:<a href="#section-3.1-5" class="pilcrow">¶</a></p>
 <p id="section-3.1-6"><code>
 loss_delay = kTimeThreshold * max(latest_rtt, smoothed_rtt) + max_ack_delay
-</code>`<a href="#section-3.1-6" class="pilcrow">¶</a></p>
+</code><a href="#section-3.1-6" class="pilcrow">¶</a></p>
 <p id="section-3.1-7">As in <span><a href="https://rfc-editor.org/rfc/rfc9002#section-6.2.1" class="relref">Section 6.2.1</a> of [<a href="#RFC9002" class="cite xref">RFC9002</a>]</span>, when <code>loss_delay</code> is calculated for Initial
 or Handshake packet number spaces, the <code>max_ack_delay</code> in the <code>loss_delay</code>
 computation is set to 0, since the peer is expected to not delay ACKs in these
@@ -1274,7 +1274,7 @@ packet number spaces intentionally; see <span><a href="https://rfc-editor.org/rf
       <h2 id="name-acknowledgments">
 <a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
       </h2>
-<p id="appendix-A-1">TODO acknowledge.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
+<p id="appendix-A-1">These individuals suggested improvements to this document:<a href="#appendix-A-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="authors-addresses">
