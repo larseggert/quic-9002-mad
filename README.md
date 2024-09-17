@@ -1,6 +1,7 @@
-# TODO - Your title
+# Maximum Acknowledgment Delay and QUIC Loss Recovery
 
-This is the working area for the individual Internet-Draft, "TODO - Your title".
+This is the working area for the individual Internet-Draft, "Maximum
+Acknowledgment Delay and QUIC Loss Recovery".
 
 * [Editor's Copy](https://larseggert.github.io/quic-9002-mad/#go.draft-eggert-quic-9002-mad.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-eggert-quic-9002-mad)
