@@ -32,7 +32,7 @@ author:
 
 --- abstract
 
-This document updates {{!RFC9002}} by specifying how the `max_ack_delay` is
+This document updates RFC9002 by specifying how the `max_ack_delay` is
 incorporated into the computation of the `loss_delay` used for time-based loss
 recovery.
 
@@ -53,7 +53,7 @@ recovery.
 
 {::boilerplate bcp14-tagged}
 
-# Updates to {{!RFC9002}}
+# Updates to RFC9002
 
 ## Detecting Lost Packets
 
@@ -78,7 +78,7 @@ into account:
 
 ```
 loss_delay = kTimeThreshold * max(latest_rtt, smoothed_rtt) + max_ack_delay
-````
+```
 
 As in {{Section 6.2.1 of !RFC9002}}, when `loss_delay` is calculated for Initial
 or Handshake packet number spaces, the `max_ack_delay` in the `loss_delay`
@@ -99,4 +99,4 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
-TODO acknowledge.
+These individuals suggested improvements to this document:
